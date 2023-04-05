@@ -63,6 +63,8 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* ----------------Header----------------- */
@@ -229,6 +231,7 @@ body {
 /* -----------Section 2 Strengths---------- */
 .section-strengths {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .strengths .title,
@@ -241,48 +244,31 @@ body {
   text-align: center;
 }
 .strength-discription {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .strengths {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .strength {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 
 .strength-title {
   margin-bottom: 8px;
 }
 .strength-icons {
-  height: 112px;
-  background-color: var(--additional-color);
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.strength-icon {
-  width: 64px;
-  height: 64px;
+  display: none;
 }
 
 /* ---------------Section What we are doing---------------- */
 .section-features {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.card-list {
-  display: flex;
-  gap: 24px;
-}
-.card-list > .image-box {
-  width: calc((100% - 48) / 3);
+  display: none;
 }
 
 /* ---------------Section Our Team---------------- */
