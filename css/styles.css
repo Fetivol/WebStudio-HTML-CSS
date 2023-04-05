@@ -60,15 +60,12 @@ body {
 }
 /*--------------container-----------------*/
 .container {
-  width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* ----------------Header----------------- */
-.page-header {
+/* .page-header {
   padding: 24px 0px;
   border-bottom: 1px solid var(--footer-text-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -82,7 +79,7 @@ body {
 
 .header-nav {
   display: flex;
-  margin-right: auto; /*we push the addres to the right*/
+  margin-right: auto;
 }
 .site-nav {
   display: flex;
@@ -91,28 +88,28 @@ body {
 .address {
   display: flex;
   gap: 40px;
-}
+} */
 
 /* -----------------logo------------------ */
-.logo {
+/* .logo {
   margin-right: 76px;
 
   text-decoration: none;
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
 
-  /* font-weight: 800; */
-  font-size: 18px;
+/* font-weight: 800; */
+/* font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
 }
 .logo-part {
   color: var(--text-color-1);
-}
+} */
 
 /* --------------Site nav---------------- */
-.site-nav .link {
+/* .site-nav .link {
   text-decoration: none;
   color: var(--title-text-color);
   font-weight: 500;
@@ -157,7 +154,7 @@ body {
 .address .link:focus,
 .address .link:hover {
   color: var(--accent-color);
-}
+} */
 
 /* ------------------Section 1------------- */
 .hero {
@@ -171,23 +168,21 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
 }
 .hero-title {
-  margin: 0 auto;
-  max-width: 496px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
   color: var(--backgroun-color);
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -205,10 +200,10 @@ body {
   font-family: inherit; /* need it for inheritance from body part */
   color: var(--backgroun-color);
   background-color: var(--text-color-1);
-  letter-spacing: 0.04em;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
 
   transition: background-color 250ms var(--transition-func);
