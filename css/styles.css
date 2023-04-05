@@ -63,8 +63,8 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ----------------Header----------------- */
@@ -274,12 +274,13 @@ body {
 /* ---------------Section Our Team---------------- */
 .team {
   background-color: var(--additional-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .teammembers {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 .teammembers .team-member {
   color: var(--title-text-color);
@@ -289,11 +290,16 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.team .container {
+  padding-left: 82px;
+  padding-right: 82px;
+}
 .teammembers-description {
   background-color: #ffffff;
-  width: calc((100% - 72) / 4);
+  max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-photo {
   padding-top: 32px;
@@ -310,6 +316,7 @@ body {
   letter-spacing: 0.02em;
 }
 .teammember-icons {
+  padding-left: 0;
   display: flex;
   justify-content: center;
   gap: 24px;
