@@ -2,25 +2,86 @@
   .container {
     width: 428px;
   }
-  .teammember-icons {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 8px;
+  .customer-item {
+    width: calc((100% - 18px) / 2);
   }
 }
-
+@media screen and (max-width: 767px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 72px;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-title-soc {
+    text-align: center;
+  }
+  .footer .logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-subscribe {
+    width: 100%;
+  }
+  .footer-subscribe-items {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .footer-input {
+    width: 100%;
+  }
+  .modal {
+    width: 392px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
     font-size: 36px;
     line-height: 1.07;
+  }
+  .strengths {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .strength {
+    width: calc((100% - 24px) / 2);
+  }
+  .teammembers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 64px;
+    align-items: center;
+    justify-content: center;
+  }
+  .customer-item {
+    width: 168px; /* calc((100% - 234px) / 3); */
+  }
+  .modal {
+    width: 408px;
+    padding: 72px 23px 23px;
   }
 }
 
@@ -83,7 +144,7 @@
     gap: 24px;
   }
   .card-list > .image-box {
-    width: calc((100% - 48) / 3);
+    width: calc((100% - 48px) / 3);
   }
   /* ---------------Section Our Team---------------- */
   .team {
@@ -103,10 +164,36 @@
     width: calc((100% - 72) / 4);
     border-radius: 0;
   }
-  .teammember-icons {
+  .section-customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
     display: flex;
-    justify-content: center;
     gap: 24px;
-    margin-top: 8px;
+    flex-wrap: nowrap;
+  }
+  .customer-item {
+    width: calc((100% - 24px * 5) / 6);
+  }
+  .footer {
+    background-color: var(--title-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+  }
+  .footer-icons {
+    margin-left: 120px;
+  }
+  .footer-subscribe {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .modal {
+    padding: 72px 24px 24px;
   }
 }
