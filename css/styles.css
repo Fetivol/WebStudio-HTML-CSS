@@ -398,7 +398,6 @@ body {
 .footer-content {
   width: 264px;
 }
-
 .footer-text {
   color: var(--footer-text-color);
   font-weight: 400;
@@ -461,6 +460,7 @@ body {
   background-color: var(--title-text-color);
   color: var(--backgroun-color);
   outline: transparent;
+  opacity: 0.3;
 }
 .footer-input::placeholder {
   font-weight: 400;
