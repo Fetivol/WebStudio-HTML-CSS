@@ -125,7 +125,7 @@ body {
 .nav-link {
   position: relative;
 }
-.current.nav-link {
+.current > .nav-link {
   color: var(--accent-color);
 }
 .current.nav-link::after {
@@ -676,6 +676,8 @@ body {
   pointer-events: none;
 }
 .modal {
+  max-height: 100vh;
+  overflow-y: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -706,6 +708,7 @@ body {
   border-radius: 50%;
   background: var(--footer-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms var(--transition-func);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -715,6 +718,7 @@ body {
   width: 8px;
   height: 8px;
   fill: var(--title-text-color);
+  transition: fill 250ms var(--transition-func);
 }
 .modal-button:hover .button-close,
 .modal-button:focus .button-close {

@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>goit-markup-hw-03</title>
   </head>
 
@@ -33,8 +34,8 @@
             <li><a href="" class="link nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <address>
-          <ul class="address list">
+        <address class="nav-contacts">
+          <ul class="nav-address list">
             <li>
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
@@ -44,6 +45,11 @@
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
             </li>
           </ul>
+          <button class="menu-button" type="button" data-menu-open>
+            <svg class="button-menu-open">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg></button
+          >s
         </address>
       </div>
     </header>

@@ -54,65 +54,67 @@
         </address>
       </div>
 
-      <div class="menu-modal is-hidden" data-menu>
-        <button class="modal-button" type="button" data-menu-close>
-          <svg class="button-close">
-            <use href="./images/icons.svg#icon-button-close"></use>
-          </svg>
-        </button>
-        <ul class="menu-nav list">
-          <li class="menu-nav-link">
-            <a href="./index.html" class="link nav-link current">Studio</a>
-          </li>
-
-          <li class="menu-nav-link">
-            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
-          </li>
-          <li class="menu-nav-link">
-            <a href="" class="link nav-link">Contacts</a>
-          </li>
-        </ul>
-
-        <address class="menu-contacts">
-          <ul class="menu-address list">
-            <li class="menu-address-item">
-              <a href="tel:+110001111111" class="address-tel"
-                >+11 (000) 111-11-11</a
-              >
+      <div class="backdrop is-hidden no-scroll" data-menu>
+        <div class="menu-modal">
+          <button class="modal-button" type="button" data-menu-close>
+            <svg class="button-close">
+              <use href="./images/icons.svg#icon-button-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav list">
+            <li class="menu-nav-link">
+              <a href="./index.html" class="link nav-link current">Studio</a>
             </li>
-            <li class="menu-address-item">
-              <a href="mailto:info@devstudio.com" class="address-mail"
-                >info@devstudio.com</a
-              >
+
+            <li class="menu-nav-link">
+              <a href="./portfolio.html" class="link nav-link">Portfolio</a>
+            </li>
+            <li class="menu-nav-link">
+              <a href="" class="link nav-link">Contacts</a>
             </li>
           </ul>
-          <ul class="icons menu-nav-soc">
-            <li class="list menu-soc-item">
-              <a href="" class="menu-item-link"
-                ><svg class="menu-item-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="list menu-soc-item">
-              <a href="" class="menu-item-link"
-                ><svg class="menu-item-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="list menu-soc-item">
-              <a href="" class="menu-item-link"
-                ><svg class="menu-item-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="list menu-soc-item">
-              <a href="" class="menu-item-link"
-                ><svg class="menu-item-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </address>
+
+          <address class="menu-contacts">
+            <ul class="menu-address list">
+              <li class="menu-address-item">
+                <a href="tel:+110001111111" class="address-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-address-item">
+                <a href="mailto:info@devstudio.com" class="address-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="icons menu-nav-soc">
+              <li class="list menu-soc-item">
+                <a href="" class="menu-item-link"
+                  ><svg class="menu-item-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="list menu-soc-item">
+                <a href="" class="menu-item-link"
+                  ><svg class="menu-item-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="list menu-soc-item">
+                <a href="" class="menu-item-link"
+                  ><svg class="menu-item-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="list menu-soc-item">
+                <a href="" class="menu-item-link"
+                  ><svg class="menu-item-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -219,6 +221,10 @@
           <ul class="teammembers list">
             <li class="teammembers-description">
               <img
+                srcset="
+                  ./images/teammember_1.jpg    1x,
+                  ./images/teammember_1@2x.jpg 2x
+                "
                 src="./images/teammember_1.jpg"
                 alt="First teammember, man with beard"
                 width="264"
@@ -258,6 +264,10 @@
             </li>
             <li class="teammembers-description">
               <img
+                srcset="
+                  ./images/teammember_2.jpg    1x,
+                  ./images/teammember_2@2x.jpg 2x
+                "
                 src="./images/teammember_2.jpg"
                 alt="Second teammember, man with shiny teeth, whose gaze is directed to the side"
                 width="264"
@@ -297,6 +307,10 @@
             </li>
             <li class="teammembers-description">
               <img
+                srcset="
+                  ./images/teammember_3.jpg    1x,
+                  ./images/teammember_3@2x.jpg 2x
+                "
                 src="./images/teammember_3.jpg"
                 alt="Third teammember, women with long blac hair"
                 width="264"
@@ -336,6 +350,10 @@
             </li>
             <li class="teammembers-description">
               <img
+                srcset="
+                  ./images/teammember_4.jpg    1x,
+                  ./images/teammember_4@2x.jpg 2x
+                "
                 src="./images/teammember_4.jpg"
                 alt="Fourth teammember, a man with a small beard who looks at us"
                 width="264"
@@ -434,7 +452,7 @@
           </p>
         </div>
         <div class="footer-icons">
-          <h3 class="title footer-title-soc">Social media</h3>
+          <p class="title footer-title-soc">Social media</p>
           <ul class="icons footer-soc-list">
             <li class="list footer-soc-item">
               <a href="" class="footer-soc-link">
