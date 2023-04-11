@@ -17,13 +17,16 @@
     width: 100%;
   }
   .menu-nav-soc {
-    gap: 100%;
+    gap: calc((100% - 96px) / 4);
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
   .modal {
     width: 392px;
+  }
+  .menu-nav-soc {
+    gap: 56px;
   }
 }
 
@@ -156,7 +159,7 @@
     padding-right: 5px;
     display: flex;
 
-    gap: 56px;
+    /* gap: 56px; */
     margin-top: 48px;
   }
   .menu-item-link {
