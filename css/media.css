@@ -17,8 +17,8 @@
     width: 100%;
   }
   .menu-nav-soc {
+    width: calc(100% - 80px);
     gap: calc((100% - 96px) / 4);
-    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
