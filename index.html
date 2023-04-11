@@ -35,8 +35,8 @@
             <li><a href="" class="link nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <address>
-          <ul class="address list">
+        <address class="nav-contacts">
+          <ul class="nav-address list">
             <li>
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
@@ -48,9 +48,70 @@
           </ul>
           <button class="menu-button" type="button" data-menu-open>
             <svg class="button-menu-open">
-              <use href="./images/icons.svg#icon-button-close"></use>
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
           </button>
+        </address>
+      </div>
+
+      <div class="menu-modal is-hidden" data-menu>
+        <button class="modal-button" type="button" data-menu-close>
+          <svg class="button-close">
+            <use href="./images/icons.svg#icon-button-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-nav list">
+          <li class="menu-nav-link">
+            <a href="./index.html" class="link nav-link current">Studio</a>
+          </li>
+
+          <li class="menu-nav-link">
+            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
+          </li>
+          <li class="menu-nav-link">
+            <a href="" class="link nav-link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="menu-contacts">
+          <ul class="menu-address list">
+            <li class="menu-address-item">
+              <a href="tel:+110001111111" class="address-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-item">
+              <a href="mailto:info@devstudio.com" class="address-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="icons menu-nav-soc">
+            <li class="list menu-soc-item">
+              <a href="" class="menu-item-link"
+                ><svg class="menu-item-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="list menu-soc-item">
+              <a href="" class="menu-item-link"
+                ><svg class="menu-item-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="list menu-soc-item">
+              <a href="" class="menu-item-link"
+                ><svg class="menu-item-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="list menu-soc-item">
+              <a href="" class="menu-item-link"
+                ><svg class="menu-item-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
         </address>
       </div>
     </header>
@@ -506,5 +567,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

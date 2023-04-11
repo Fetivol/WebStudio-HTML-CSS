@@ -140,7 +140,7 @@ body {
   border-radius: 2px;
   opacity: 1;
 }
-.address .link {
+.nav-address .link {
   text-decoration: none;
   color: var(--address-color);
   font-style: normal;
@@ -151,9 +151,9 @@ body {
 
   transition: color 250ms var(--transition-func);
 }
-.address .link:active,
-.address .link:focus,
-.address .link:hover {
+.nav-address .link:active,
+.nav-address .link:focus,
+.nav-address .link:hover {
   color: var(--accent-color);
 }
 .menu-button {
@@ -165,11 +165,24 @@ body {
   width: 32px;
   height: 22px;
 }
-.menu-button .button-menu-open {
+.menu-button {
   width: 32px;
   height: 22px;
 }
-
+.button-menu-open {
+  width: 32px;
+  height: 22px;
+  stroke: var(--title-text-color);
+}
+.menu-modal {
+  position: fixed;
+  width: 428px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: var(--backgroun-color);
+  transform: translatex(-50%);
+}
 /* ------------------Section 1------------- */
 .hero {
   max-width: 1440px;
@@ -178,7 +191,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/desc-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -362,7 +375,6 @@ body {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
   row-gap: 72px;
   column-gap: 16px;
   justify-content: center;
@@ -655,6 +667,7 @@ body {
   transition: opacity 250ms var(--transition-func),
     visibility 250ms var(--transition-func);
   opacity: 1;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -804,6 +817,7 @@ body {
 }
 .check-text {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
